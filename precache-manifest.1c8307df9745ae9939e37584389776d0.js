@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "f67ae8f5615e68c545e6d390fa696444",
-    "url": "/personalWebsite/static/media/protohack.f67ae8f5.jpg"
+    "revision": "fc54c4136fc890f249ad7df428a8e938",
+    "url": "/personalWebsite/static/media/OpencareIcon.fc54c413.png"
   },
   {
-    "revision": "c513305be8e7baf68d71",
-    "url": "/personalWebsite/static/css/main.43b20bc4.chunk.css"
+    "revision": "26c1e6a2590981949dce",
+    "url": "/personalWebsite/static/css/main.6a2fdafa.chunk.css"
   },
   {
     "revision": "e9c50970f2f2477f04f8791c6ea728ac",
     "url": "/personalWebsite/static/media/James.e9c50970.jpg"
   },
   {
-    "revision": "74c3cca74e50e149bd6f",
-    "url": "/personalWebsite/static/js/1.74c3cca7.chunk.js"
+    "revision": "898edbaa49ca898a409f",
+    "url": "/personalWebsite/static/js/1.898edbaa.chunk.js"
   },
   {
     "revision": "2547ba8fe0dff96279a5",
@@ -32,8 +32,16 @@ self.__precacheManifest = [
     "url": "/personalWebsite/static/media/tasktop.f8e950af.png"
   },
   {
-    "revision": "c513305be8e7baf68d71",
-    "url": "/personalWebsite/static/js/main.c513305b.chunk.js"
+    "revision": "839ec28eadf38ccb15d265cb5aecedbb",
+    "url": "/personalWebsite/static/media/Opencare.839ec28e.png"
+  },
+  {
+    "revision": "26c1e6a2590981949dce",
+    "url": "/personalWebsite/static/js/main.26c1e6a2.chunk.js"
+  },
+  {
+    "revision": "f67ae8f5615e68c545e6d390fa696444",
+    "url": "/personalWebsite/static/media/protohack.f67ae8f5.jpg"
   },
   {
     "revision": "13384616a625ed6986f1c6ec5b0f5719",
@@ -60,11 +68,11 @@ self.__precacheManifest = [
     "url": "/personalWebsite/static/media/ResumeGenerator.5179a873.png"
   },
   {
-    "revision": "74c3cca74e50e149bd6f",
-    "url": "/personalWebsite/static/css/1.82183584.chunk.css"
+    "revision": "898edbaa49ca898a409f",
+    "url": "/personalWebsite/static/css/1.5c314573.chunk.css"
   },
   {
-    "revision": "1a3cd9f4004d655eca8408e9d9c5a492",
+    "revision": "4c738106e3f9346f74ab2affc77dfbfa",
     "url": "/personalWebsite/index.html"
   }
 ];
