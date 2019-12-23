@@ -1,0 +1,16 @@
+@import '~antd/dist/antd.css';
+
+.details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topic{
+  display: inline-block;
+}
+.role{
+  display: inline-block;
+}
+.placement{
+  display: inline-block;
+}
