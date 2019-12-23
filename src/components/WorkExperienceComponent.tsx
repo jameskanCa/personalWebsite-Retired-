@@ -1,21 +1,52 @@
-import { Tabs, Divider, Radio, List, Avatar } from "antd";
+import { Divider, List, Avatar } from "antd";
 import React from "react";
 import TasktopLogo from "../assets/tasktop.png";
+import TasktopIcon from "../assets/tasktopIcon.png";
 import UBCMedicineLogo from "../assets/UBCOT.png";
 import UBCDentistryLogo from "../assets/dent.jpg";
-import TasktopIcon from "../assets/tasktopIcon.png";
-const TabPane = Tabs.TabPane;
+import OpencareLogo from "../assets/Opencare.png";
+import OpencareIcon from "../assets/OpencareIcon.png";
 
 export default class SlidingTabsDemo extends React.Component {
   render() {
-    const WorkObject = [
+    const WorkObject: any = [
+      {
+        companyName: "Opencare",
+        positionName: "Software Engineering Co-op",
+        duration: "May 2019 - Aug 2019",
+        project: "Opencare Sync",
+        description: (
+          <div style={{ whiteSpace: "pre-wrap" }}>
+            ➢ Implemented and deployed a cloud-based online-booking data-scraper API with
+            Node.js and JavaScript for a platform that Opencare’s competitors cannot support{'\n'}
+            ➢ Built a C# integration for a dental software 3 weeks earlier than scheduled and
+            increased eligibility of Opencare’s Canadian clients by 30% through the desktop
+            integration{'\n'}
+            ➢ Created a C.I./C.D. build pipeline for the desktop application using Jenkins to
+            encourage the team to deploy more regularly, and reduce the time that engineers spent
+            creating/reviewing builds
+          </div>
+        ),
+        logo: OpencareLogo,
+        icon: OpencareIcon
+      },
       {
         companyName: "Tasktop Technologies",
         positionName: "Jr. Software Engineer",
         duration: "Sept 2018 - April 2019",
         project: "Viz",
         description:
-          "Built visual graphs with React, D3, and SVG to show customer facing ‘flow metric’ data as part of ‘Viz’, a microservice-orientated cloud analytics application.	Collected agent data to Kafka and wrote back-end Scala code to process data for UI. Deployed Datadog JMX monitoring services for production Kubernetes cluster that provided critical insight into application service performances",
+        (
+          <div style={{ whiteSpace: "pre-wrap" }}>
+            ➢ Delivered the first data visualization feature using D3 and SVG in
+            React with TypeScript for an important product demo with BMW {'\n'}
+            ➢ Deployed critical application monitoring infrastructure for
+            production Kubernetes clusters using Datadog which helped to
+            identify major performance bottlenecks {'\n'}
+            ➢ Implemented parts of user access controls in the backend, working with Scala, Kafka,
+            Kubernetes, and GraphQL to meet early access timeline
+          </div>
+        ),
         logo: TasktopLogo,
         icon: TasktopIcon
       },
@@ -73,41 +104,3 @@ export default class SlidingTabsDemo extends React.Component {
     );
   }
 }
-
-/**<TabPane tab={workObject.companyName} key={index.toString()}>
-           <List.Item
-              key={workObject.companyName}
-              extra={<img width={272} alt="logo" src={workObject.logo} />}
-            >
-              <List.Item.Meta
-                avatar={<Avatar src={workObject.logo} />}
-                title={<a >{workObject.companyName}</a>}
-                description={
-                  <div className="details">
-                    <div className="techStack">{workObject.positionName}</div>
-                    <div className="description">{workObject.description}</div>
-                  </div>
-                }
-              />
-            </List.Item>
-            
-            </TabPane> */
-/** <Tabs defaultActiveKey="0" tabPosition={"top"} style={{ height: 220 }}>
-          {WorkObject.map((workObject, index) => {
-           return <List.Item
-           key={workObject.companyName}
-           extra={<img width={272} alt="logo" src={workObject.logo} />}
-         >
-           <List.Item.Meta
-             avatar={<Avatar src={workObject.logo} />}
-             title={<a >{workObject.companyName}</a>}
-             description={
-               <div className="details">
-                 <div className="techStack">{workObject.positionName}</div>
-                 <div className="description">{workObject.description}</div>
-               </div>
-             }
-           />
-         </List.Item>;
-          })}
-        </Tabs> */

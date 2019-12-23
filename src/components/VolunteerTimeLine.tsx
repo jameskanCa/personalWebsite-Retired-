@@ -8,7 +8,7 @@ export default class VolunteerTimeLine extends React.Component {
 
   handleClick = () => {
     this.setState({ reverse: !this.state.reverse });
-  };
+  }
 
   render() {
     const volunteerObjects = [

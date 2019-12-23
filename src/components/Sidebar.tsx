@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu, Icon } from "antd";
 const { Sider } = Layout;
 import { HashRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -11,7 +11,7 @@ export default class Sidebar extends React.Component {
 
   onCollapse = (collapsed: boolean) => {
     this.setState({ collapsed });
-  };
+  }
 
   render() {
     return (

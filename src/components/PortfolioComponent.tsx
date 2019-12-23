@@ -1,19 +1,66 @@
 import * as React from "react";
-import { Card, Col, Row, Divider, List, Avatar } from "antd";
+import { Divider, List, Avatar } from "antd";
 import WezardRush from "../assets/wezardrushLogo.png";
-import ProjectReset from "../assets/projectReset.jpg";
 import UBCDent from "../assets/dent.jpg";
 import VoiceControl from "../assets/assistant.png";
 import ResumeGenerator from "../assets/ResumeGenerator.png";
+import YoutubeLogo from "../assets/youtubeLogo.png";
 import "../styles/PortfolioComponent.scss";
+
 export default class HackathonExperience extends React.Component {
   render() {
     const portfolioObject = [
       {
+        projectName: "Youtube Note Taker",
+        techStack: "JavaScript, React, MongoDB, NodeJS",
+        description: (
+          <div style={{ whiteSpace: "pre-wrap" }}>
+            ➢ Created a chrome extension using React that operates on YouTube
+            video pages as a popup with the transcript of the video in a text
+            editor {'\n'}
+            ➢ Building a local Node.js server to store user inputs and
+            metadata in MongoDB {"\n"}
+            <ul style={{ listStyleType: "none" }}>
+              <li>
+                <a href={"https://github.com/jameskanCa/youtubeextension"}>
+                  Client Code
+                </a>
+              </li>
+              <li>
+                <a href={"https://github.com/jameskanCa/Youtube-Server"}>
+                  Server Code
+                </a>
+              </li>
+            </ul>
+          </div>
+        ),
+        projectLink: "https://github.com/jameskanCa/youtubeextension",
+        imageLink: YoutubeLogo
+      },
+      {
         projectName: "Voice Control Chrome Browser",
         techStack: "Typescript, React, Dialogflow, Firebase",
-        description:
-          "Designed and architected a P.O.C. of controlling various chrome browser commands through voice with Google Assistant's Dialogflow API. Collaborated to create initial implementation design in one week and built a chrome extension using Node.js, accessing Google's web API to achieve commands",
+        description: (
+          <div style={{ whiteSpace: "pre-wrap" }}>
+            Designed and architected a P.O.C. of controlling various chrome
+            browser commands through voice with Google Assistant's Dialogflow
+            API. Collaborated to create initial implementation design in one
+            week and built a chrome extension using Node.js, accessing Google's
+            web API to achieve commands. {"\n"}
+            <ul style={{ listStyleType: "none" }}>
+              <li>
+                <a href={"https://github.com/jameskanCa/flow-client"}>
+                  Client Code
+                </a>
+              </li>
+              <li>
+                <a href={"https://github.com/jameskanCa/flow-server"}>
+                  Server Code
+                </a>
+              </li>
+            </ul>
+          </div>
+        ),
         projectLink: "https://github.com/jameskanCa/flow-client",
         imageLink: VoiceControl
       },
@@ -24,14 +71,6 @@ export default class HackathonExperience extends React.Component {
           "Built to rename 1000+ patient record files for the faculty of Dentistry. Lightening the manual task of scanning and renaming patient record files. Users input information and allow for the program to create a folder and rename all items within according to the standard naming system at UBC dentistry.",
         projectLink: "https://github.com/jameskanCa/ubcDentFileRenamer",
         imageLink: UBCDent
-      },
-      {
-        projectName: "Project Reset",
-        techStack: "Java (Android), XML",
-        description:
-          "Utilizing haptic feedback to a series of 5 'shakes' that will guide users to calm down and count from 5 to 1 to allow for mental reset. In development, basic functions operational.",
-        projectLink: "https://github.com/jameskanCa/Project-Reset",
-        imageLink: ProjectReset
       },
       {
         projectName: "Wezard Rush",
@@ -81,34 +120,3 @@ export default class HackathonExperience extends React.Component {
     );
   }
 }
-
-/**    <div>
-        <Divider orientation="left">Portfolio</Divider>
-        <div style={{ background: "#ECECEC", padding: "30px" }}>
-          <Row gutter={16}>
-            {portfolioObject.map(portfolioObject => {
-              return (
-                <Col span={8}>
-                  <Card
-                    title={portfolioObject.projectName}
-                    bordered={false}
-                    hoverable
-                    style={{ width: 240 }}
-                    cover={
-                      <img
-                        alt="example"
-                        src={portfolioObject.imageLink}
-                      />
-                    }
-                  >
-                    <div className="techStack">{portfolioObject.techStack}</div>
-                    <div className="description">
-                      {portfolioObject.description}
-                    </div>
-                  </Card>
-                </Col>
-              );
-            })}
-          </Row>
-        </div>
-      </div> */

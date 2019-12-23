@@ -3,7 +3,7 @@ import "./styles/App.scss";
 import Panel from "./components/Panel";
 import Sidebar from "./components/Sidebar";
 import { Layout } from "antd";
-const { Content, Sider } = Layout;
+const { Content } = Layout;
 
 class App extends Component {
   render() {

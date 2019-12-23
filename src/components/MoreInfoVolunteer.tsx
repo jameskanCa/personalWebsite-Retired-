@@ -1,13 +1,13 @@
 import { Modal, Button } from "antd";
 import React from "react";
 
-interface infoProps {
+interface InfoProps {
   dateRange: string;
   title: string;
   details: string;
 }
 
-export default class App extends React.Component<infoProps> {
+export default class App extends React.Component<InfoProps> {
   state = {
     loading: false,
     visible: false
@@ -17,25 +17,25 @@ export default class App extends React.Component<infoProps> {
     this.setState({
       visible: true
     });
-  };
+  }
 
   handleOk = () => {
     this.setState({ loading: true });
     setTimeout(() => {
       this.setState({ loading: false, visible: false });
     }, 3000);
-  };
+  }
 
   handleCancel = () => {
     this.setState({ visible: false });
-  };
+  }
 
   render() {
     const { visible, loading } = this.state;
     return (
       <div>
         <Button type="primary" onClick={this.showModal}>
-         More Info
+          More Info
         </Button>
         <Modal
           visible={visible}
