@@ -2,7 +2,7 @@
   "name": "personal-website-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jameskanCa.github.io/jameskanCa.github.io",
+  "homepage": "https://jameskanCa.github.io/personalWebsite",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@types/jest": "23.3.13",
