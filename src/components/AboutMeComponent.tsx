@@ -23,7 +23,6 @@ export default class SlidingTabsDemo extends React.Component {
   render() {
     return (
       <div className="about-me-block">
-        <Divider orientation="left">About Me</Divider>
         <List
           itemLayout="vertical"
           size="large"

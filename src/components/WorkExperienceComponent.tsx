@@ -17,13 +17,14 @@ export default class SlidingTabsDemo extends React.Component {
         project: "Opencare Sync",
         description: (
           <div style={{ whiteSpace: "pre-wrap" }}>
-            ➢ Implemented and deployed a cloud-based online-booking data-scraper API with
-            Node.js and JavaScript for a platform that Opencare’s competitors cannot support{'\n'}
-            ➢ Built a C# integration for a dental software 3 weeks earlier than scheduled and
-            increased eligibility of Opencare’s Canadian clients by 30% through the desktop
-            integration{'\n'}
-            ➢ Created a C.I./C.D. build pipeline for the desktop application using Jenkins to
-            encourage the team to deploy more regularly, and reduce the time that engineers spent
+            ➢ Implemented and deployed a cloud-based online-booking data-scraper
+            API with Node.js and JavaScript for a platform that Opencare’s
+            competitors cannot support{"\n"}➢ Built a C# integration for a
+            dental software 3 weeks earlier than scheduled and increased
+            eligibility of Opencare’s Canadian clients by 30% through the
+            desktop integration{"\n"}➢ Created a C.I./C.D. build pipeline for
+            the desktop application using Jenkins to encourage the team to
+            deploy more regularly, and reduce the time that engineers spent
             creating/reviewing builds
           </div>
         ),
@@ -35,15 +36,14 @@ export default class SlidingTabsDemo extends React.Component {
         positionName: "Jr. Software Engineer",
         duration: "Sept 2018 - April 2019",
         project: "Viz",
-        description:
-        (
+        description: (
           <div style={{ whiteSpace: "pre-wrap" }}>
             ➢ Delivered the first data visualization feature using D3 and SVG in
-            React with TypeScript for an important product demo with BMW {'\n'}
-            ➢ Deployed critical application monitoring infrastructure for
+            React with TypeScript for an important product demo with BMW {"\n"}➢
+            Deployed critical application monitoring infrastructure for
             production Kubernetes clusters using Datadog which helped to
-            identify major performance bottlenecks {'\n'}
-            ➢ Implemented parts of user access controls in the backend, working with Scala, Kafka,
+            identify major performance bottlenecks {"\n"}➢ Implemented parts of
+            user access controls in the backend, working with Scala, Kafka,
             Kubernetes, and GraphQL to meet early access timeline
           </div>
         ),
@@ -73,7 +73,6 @@ export default class SlidingTabsDemo extends React.Component {
     ];
     return (
       <div>
-        <Divider orientation="left">Work Experience</Divider>
         <List
           itemLayout="vertical"
           size="large"
@@ -87,7 +86,18 @@ export default class SlidingTabsDemo extends React.Component {
           renderItem={(workObject: any) => (
             <List.Item
               key={workObject.companyName}
-              extra={<img width={272} alt="logo" src={workObject.logo} />}
+              extra={
+                <div
+                  style={{
+                    overflow: "auto",
+                    height: "100%",
+                    width: "100%",
+                    verticalAlign: "middle"
+                  }}
+                >
+                  <img width={272} alt="logo" src={workObject.logo} />
+                </div>
+              }
             >
               <List.Item.Meta
                 avatar={<Avatar src={workObject.icon} />}

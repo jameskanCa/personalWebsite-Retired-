@@ -8,7 +8,7 @@ export default class VolunteerTimeLine extends React.Component {
 
   handleClick = () => {
     this.setState({ reverse: !this.state.reverse });
-  }
+  };
 
   render() {
     const volunteerObjects = [
@@ -77,7 +77,6 @@ export default class VolunteerTimeLine extends React.Component {
     ];
     return (
       <div>
-        <Divider orientation="right">Volunteer Experience</Divider>
         <Timeline
           pending="More coming in the future!"
           reverse={this.state.reverse}
@@ -86,15 +85,14 @@ export default class VolunteerTimeLine extends React.Component {
             return (
               <div>
                 <Timeline.Item>
-                  {volunteer.title}{" "}
+                  {volunteer.title}
                   <div>
-                    {" "}
                     <MoreInfoVolunteer
                       title={volunteer.title}
                       dateRange={volunteer.date}
                       details={volunteer.details}
                     />
-                  </div>{" "}
+                  </div>
                 </Timeline.Item>
               </div>
             );

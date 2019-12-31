@@ -5,26 +5,14 @@ import { HashRouter } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default class Sidebar extends React.Component {
-  state = {
-    collapsed: true
-  };
-
-  onCollapse = (collapsed: boolean) => {
-    this.setState({ collapsed });
-  }
 
   render() {
     return (
       <Sider
         style={{
-          overflow: "auto",
-          height: "100vh",
-          position: "fixed",
-          left: 0
+          overflow: 'auto', height: '100vh', position: 'fixed', left: 0
         }}
-        collapsible
-        collapsed={this.state.collapsed}
-        onCollapse={this.onCollapse}
+        collapsed={true}
       >
         <div className="logo" />
         <HashRouter>

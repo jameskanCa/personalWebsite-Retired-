@@ -9,12 +9,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Layout>
+        <Layout style={{ minHeight: "100vh" }}>
           <Sidebar />
-          <Layout style={{ marginLeft: 110 }}>
-          <Content style={{ overflow: "initial" }}>
-            <Panel />
-          </Content>
+          <Layout>
+            <Content style={{ marginLeft: 90 }}>
+              <Panel />
+            </Content>
           </Layout>
         </Layout>
       </div>

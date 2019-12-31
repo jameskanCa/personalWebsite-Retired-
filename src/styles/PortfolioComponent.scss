@@ -1,1 +1,23 @@
 @import '~antd/dist/antd.css';
+
+li{
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 130%;
+}
+
+.ant-carousel {
+    width: 200px;
+}
+
+.ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    overflow: hidden;
+  }
+  
+  .ant-carousel .slick-slide h3 {
+    color: #fff;
+}

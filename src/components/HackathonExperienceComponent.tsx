@@ -54,7 +54,6 @@ export default class HackathonExperience extends React.Component {
     ];
     return (
       <div>
-        <Divider orientation="left">Hackathon Experience</Divider>
         <List
           itemLayout="vertical"
           size="large"
