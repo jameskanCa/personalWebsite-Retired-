@@ -16,7 +16,7 @@ export default class SlidingTabsDemo extends React.Component {
         duration: "May 2019 - Aug 2019",
         project: "Opencare Sync",
         description: (
-          <div style={{ whiteSpace: "pre-wrap" }}>
+          <div style={{ whiteSpace: "pre-wrap", textAlign: "justify" }}>
             ➢ Implemented and deployed a cloud-based online-booking data-scraper
             API with Node.js and JavaScript for a platform that Opencare’s
             competitors cannot support{"\n"}➢ Built a C# integration for a
@@ -37,7 +37,7 @@ export default class SlidingTabsDemo extends React.Component {
         duration: "Sept 2018 - April 2019",
         project: "Viz",
         description: (
-          <div style={{ whiteSpace: "pre-wrap" }}>
+          <div style={{ whiteSpace: "pre-wrap", textAlign: "justify" }}>
             ➢ Delivered the first data visualization feature using D3 and SVG in
             React with TypeScript for an important product demo with BMW {"\n"}➢
             Deployed critical application monitoring infrastructure for
@@ -92,7 +92,8 @@ export default class SlidingTabsDemo extends React.Component {
                     overflow: "auto",
                     height: "100%",
                     width: "100%",
-                    verticalAlign: "middle"
+                    verticalAlign: "middle",
+                    paddingTop: "10%"
                   }}
                 >
                   <img width={272} alt="logo" src={workObject.logo} />
