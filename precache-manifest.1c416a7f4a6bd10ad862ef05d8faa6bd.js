@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/personalWebsite/static/media/OpencareIcon.fc54c413.png"
   },
   {
-    "revision": "d03d5cd05cfaae43548c",
+    "revision": "f918170246ef4e7b36b4",
     "url": "/personalWebsite/static/css/main.5fc79ee8.chunk.css"
   },
   {
@@ -20,12 +20,8 @@ self.__precacheManifest = [
     "url": "/personalWebsite/static/js/runtime~main.2547ba8f.js"
   },
   {
-    "revision": "f4eadbd33a991e7f4332cb10cd1ddc92",
-    "url": "/personalWebsite/static/media/dent.f4eadbd3.jpg"
-  },
-  {
-    "revision": "b44b4043eb47f2060f8d59282c24977f",
-    "url": "/personalWebsite/static/media/UBCOT.b44b4043.png"
+    "revision": "01b70bdbf2e8219b46d69b45c03bd35b",
+    "url": "/personalWebsite/static/media/UBCOT.01b70bdb.png"
   },
   {
     "revision": "f877cd072731aed6397d12e9c0c5a193",
@@ -48,8 +44,8 @@ self.__precacheManifest = [
     "url": "/personalWebsite/static/media/Opencare.839ec28e.png"
   },
   {
-    "revision": "d03d5cd05cfaae43548c",
-    "url": "/personalWebsite/static/js/main.d03d5cd0.chunk.js"
+    "revision": "f918170246ef4e7b36b4",
+    "url": "/personalWebsite/static/js/main.f9181702.chunk.js"
   },
   {
     "revision": "f67ae8f5615e68c545e6d390fa696444",
@@ -92,7 +88,7 @@ self.__precacheManifest = [
     "url": "/personalWebsite/static/css/1.69406120.chunk.css"
   },
   {
-    "revision": "f9545abac54638362276af14e9e6ed58",
+    "revision": "1d0c34e8993c0f2e9758c913e1aa9a4d",
     "url": "/personalWebsite/index.html"
   }
 ];
