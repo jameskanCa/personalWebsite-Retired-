@@ -18,7 +18,6 @@ export default class HackathonExperience extends React.Component {
   state = { visible: false };
 
   showModal = () => {
-    console.log("Hi");
     this.setState({
       visible: true
     });
@@ -92,14 +91,17 @@ export default class HackathonExperience extends React.Component {
 
   portfolioObject = [
     {
-      projectName: "Youtube Note Taker",
+      projectName: "YouTube Focus Reminder ",
       techStack: "JavaScript, React, MongoDB, NodeJS",
       description: (
-        <div style={{ whiteSpace: "pre-wrap" }}>
-          ➢ Created a chrome extension using React that operates on YouTube
-          video pages as a popup with the transcript of the video in a text
-          editor {"\n"}➢ Building a local Node.js server to store user inputs
-          and metadata in MongoDB {"\n"}
+        <div>
+          Created Chrome extension to collect video metadata and a popup modal
+          to notify users whether a video is distracting towards studying.
+          Implemented a RESTful API server using Node.js to store and retrieve
+          user data from the MongoDB database, enforcing a client-server
+          architecture. Built a Single-Page Application in React that performs
+          REST calls to API to retrieve data for client-side calculation and
+          rendering of watch history metrics in charts.
         </div>
       ),
       projectLink: "https://github.com/jameskanCa/youtubeextension",
@@ -124,12 +126,13 @@ export default class HackathonExperience extends React.Component {
       projectName: "Voice Control Chrome Browser",
       techStack: "Typescript, React, Dialogflow, Firebase",
       description: (
-        <div style={{ whiteSpace: "pre-wrap" }}>
-          Designed and architected a P.O.C. of controlling various chrome
-          browser commands through voice with Google Assistant's Dialogflow API.
-          Collaborated to create initial implementation design in one week and
-          built a chrome extension using Node.js, accessing Google's web API to
-          achieve commands. {"\n"}
+        <div>
+          Collaborated to build a Chrome extension using JavaScript, accessing
+          Google’s web API to achieve basic browser commands through voice.
+          Wrote server-side code in Golang that handles JWT requests and
+          performs routing of user’s voice commands from Google Home devices to
+          the correct browser. Deployed server on Amazon AWS infrastructure
+          utilizing EC2 and a load balancer (ELB) handling client requests.
         </div>
       ),
       projectLink: "https://github.com/jameskanCa/flow-client",
@@ -149,8 +152,16 @@ export default class HackathonExperience extends React.Component {
     {
       projectName: "UBC Dent File Renamer",
       techStack: "JavaFX, Java",
-      description:
-        "Built to rename 1000+ patient record files for the faculty of Dentistry. Lightening the manual task of scanning and renaming patient record files. Users input information and allow for the program to create a folder and rename all items within according to the standard naming system at UBC dentistry.",
+      description: (
+        <div>
+          Designed and implemented an automation software that renamed over
+          1000+ digitized patient records according to patient information.
+          Learned JavaFX in a week to design G.U.I. and integrated M.V.C. design
+          pattern. Back-end design utilized Java file systems to create folders,
+          save files, and comply with departmental privacy and patient data
+          security requirements.
+        </div>
+      ),
       projectLink: "https://github.com/jameskanCa/ubcDentFileRenamer",
       imageLink: [UBCDent],
       imageAvatar: UBCDent,

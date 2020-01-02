@@ -11,7 +11,7 @@ export default class HackathonExperience extends React.Component {
     const hackathonObject = [
       {
         name: "Protohack",
-        topic: "Depression & Mental Wellbeing.",
+        topic: "Mental Wellbeing.",
         role: "Participant/Team Lead",
         placement: "2nd Place",
         description:
@@ -22,7 +22,7 @@ export default class HackathonExperience extends React.Component {
 
       {
         name: "Lumohacks 2.0",
-        topic: "Depression & Mental Wellbeing",
+        topic: "Mental Wellbeing",
         role: "Participant",
         placement: "7th Place",
         description:
@@ -43,7 +43,7 @@ export default class HackathonExperience extends React.Component {
       },
       {
         name: "Lumohacks",
-        topic: "Depression & Mental Wellbeing",
+        topic: "Mental Wellbeing",
         role: "Participant",
         placement: "11th Place",
         description:
@@ -61,7 +61,7 @@ export default class HackathonExperience extends React.Component {
             onChange: page => {
               console.log(page);
             },
-            pageSize: 3
+            pageSize: 4
           }}
           dataSource={hackathonObject}
           renderItem={(item: any) => (

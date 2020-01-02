@@ -78,7 +78,6 @@ export default class VolunteerTimeLine extends React.Component {
     return (
       <div>
         <Timeline
-          pending="More coming in the future!"
           reverse={this.state.reverse}
         >
           {volunteerObjects.map(volunteer => {
@@ -86,7 +85,7 @@ export default class VolunteerTimeLine extends React.Component {
               <div>
                 <Timeline.Item>
                   {volunteer.title}
-                  <div>
+                  <div style={{ margin: 10 }}>
                     <MoreInfoVolunteer
                       title={volunteer.title}
                       dateRange={volunteer.date}
